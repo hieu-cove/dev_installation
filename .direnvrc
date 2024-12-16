@@ -1,0 +1,8 @@
+use_python() {
+    local py_exe=$(pyenv prefix $1)
+    if [ $? -ne 0 ]; then
+	pyenv install --force $1
+        local py_exe=$(pyenv prefix $1)
+    fi
+    layout python $py_exe/bin/python
+}
