@@ -125,7 +125,7 @@ git clone git@github.com:covetool/ct_units.git
 cd ~/src
 git clone git@github.com:covetool/cove.git --recursive
 # Install the dependencies for python dependencies
-sudo dnf install -y libcurl libpq-devel
+sudo dnf install -y python3-pycurl libpq-devel
 # Get and install the python version from the cove_envrc.sh file
 pyenv install $(grep "use python" $INSTALL_FOLDER/cove_envrc.sh | cut -d' ' -f3)
 # Copy the cove direnv file to the cove repository
