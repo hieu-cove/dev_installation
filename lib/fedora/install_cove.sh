@@ -28,7 +28,7 @@ sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
 
 # Install direnv, zsh, curl and pip
-sudo apt -y install direnv zsh curl python3-pip
+sudo dnf -y install direnv zsh curl python3-pip
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
